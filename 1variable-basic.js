@@ -47,3 +47,9 @@ var varObject={ name:'john'};
 console.log(varObject);
 console.log(typeof varObject);
 console.log(varObject.name);
+
+//hoisting (doesn"t work in intellij but ok in plunker
+var5 = 5;
+console.log(var5);
+
+var var5;
