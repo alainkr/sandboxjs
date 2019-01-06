@@ -15,7 +15,7 @@ console.log(array);
 array.forEach(function (e, i, a) {
     console.log('elem ' + e + ' at ' + i);
     // the array
-})
+});
 
 
 array.push(7);
@@ -58,3 +58,34 @@ var arrayOfChar=['a', 'b', 'c', 'd', 'e'];
 var subArray = arrayOfChar.slice(start, end);
 console.log(arrayOfChar);
 console.log(subArray);
+
+
+
+var array2OrMore = array.filter(function (value) {
+    return value >= 2;
+});
+console.log(array2OrMore);
+
+var arrayOfCharUpper = arrayOfChar.map(function (value) {
+    return value.toUpperCase();
+});
+console.log(arrayOfCharUpper);
+
+
+console.log('array', array);
+var reduced = array.reduce(function (previousValue, currentValue) {
+    console.log('prev:' + previousValue + ' current' + currentValue);
+    return previousValue + currentValue;
+});
+console.log(reduced);
+
+
+var array2revese = [1, 2, 3];
+console.log(array2revese.reverse()); //changes array
+console.log(array2revese);
+
+var arrayConCated = array2revese.concat([4, 5]); //doesnt change
+console.log(arrayConCated);
+console.log(array2revese);
+
+console.log(array2revese.join(','));
