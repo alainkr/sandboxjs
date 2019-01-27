@@ -13,22 +13,22 @@ console.log(array);
 
 
 array.forEach(function (e, i, a) {
-    console.log('elem ' + e + ' at ' + i);
+    console.log('elem ' + e + ' at ' + i + ' of ' + a);
     // the array
 });
 
 
-array.push(7);
+array.push(7); //add to the end
 console.log(array);
 array.push(8);
 console.log(array);
 
-var last = array.pop();
+var last = array.pop(); // take from the last
 
 console.log(array);
 console.log(last); //8
 
-var first = array.shift();
+var first = array.shift(); // take from the 0 elem
 console.log(first);
 console.log(array);
 
@@ -41,7 +41,7 @@ console.log(indexOf3);
 console.log('before splice'+ array);
 var newArrayFromPos3 = array.splice(3); //changes the array
 console.log('after splice'+ array);
-console.log(newArrayFromPos3);
+console.log('new array from splice'+ newArrayFromPos3);
 
 var start =2;
 var offset =3;
