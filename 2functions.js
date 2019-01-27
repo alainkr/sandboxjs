@@ -1,4 +1,5 @@
 //hoisting
+// can use after declare since several pass
 calc();
 
 function calc() {
@@ -19,7 +20,7 @@ var anotherFnWillError = calc2();
 
 // anotherFnWillError(); will error with anotherFnWillError is not a function because return of calc2() was assign not the function reference it self
 
-console.log(typeof anotherFnWillError)
+console.log(typeof anotherFnWillError); //undefined
 
 
 function calc3() {
@@ -35,6 +36,6 @@ function calc4(number1,number2) {
 
 console.log(calc4()); //NaN because passing nothing is NaN + NaN = NaN
 
-console.log(calc4(10, 10));
+console.log(calc4(10, 10)); //20
 
 
