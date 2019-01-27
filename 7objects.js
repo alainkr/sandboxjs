@@ -10,7 +10,7 @@ var person = {
     ],
 
     greet :  function () {
-        //this refer to current objet otherwire name is global scope var
+        //this refer to current object otherwise name is global scope var
         console.log('Hello ' + this.name + ' my age is ' + this.age) ;
     }
 };
@@ -26,11 +26,11 @@ console.log(person[prop]);
 person.greet();
 
 
-var elvine= new Object();
-elvine.name='elvine';
-elvine['last-name']='jones';
+var elvin= new Object();
+elvin.name='elvin';
+elvin['last-name']='jones';
 
-console.log(elvine);
+console.log(elvin);
 
 var oo = {};
 oo.prop='val';
@@ -42,7 +42,7 @@ console.log(oo === oo2);//false <> pointer ref
 
 
 var objectWithNullPrototype = Object.create(null);
-objectWithNullPrototype.name='elvine';
+objectWithNullPrototype.name='elvin';
 console.log(objectWithNullPrototype);
 
 
@@ -53,3 +53,4 @@ console.log(objectWithPersonPrototype.age); // actually there juste not logged j
 objectWithPersonPrototype.greet(); //
 
 // default prototype is Object.prototype
+console.log(objectWithPersonPrototype.prototype._)
