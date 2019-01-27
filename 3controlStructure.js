@@ -20,6 +20,7 @@ console.log(1 == true); //true
 console.log(2 == true); //false
 
 // 0 == false else true
+// it's not 1==true rest is false !!
 
 
 cond(-1); // also true : executed
@@ -27,7 +28,7 @@ cond(-1); // also true : executed
 cond('text');// also true
 cond('false');// also true any text is true
 cond(null); // false
-
+// /!\
 
 switchExample(8); //case8
 switchExample(1); //case1
@@ -77,13 +78,18 @@ console.log(sum);
 
 console.log(typeof (r=0)) //false
 console.log(typeof (r=1)) //true
-
+console.log(typeof (r=2)) //true
 //assigment not condition !!
 if(r=1 ) {
     console.log("true")
 }
 
+if(r=0 ) {
+    console.log("true")
 
+}else{
+    console.log("(r=0) is false ")
+}
 var array = [1, 2, 3];
 
 for (var i = 0; i < array.length; i++) {
