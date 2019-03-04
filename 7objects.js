@@ -19,7 +19,7 @@ var person = {
 console.log(person);
 console.log(person.name);
 console.log(person['name']);
-//console.log(person."last-name"); not possible use ['']
+//console.log(personLiteral."last-name"); not possible use ['']
 console.log(person['last-name']);
 var prop= 'name'
 console.log(person[prop]);

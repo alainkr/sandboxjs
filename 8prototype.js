@@ -17,7 +17,7 @@ var max = Object.create(person);
 
 console.log(max.name);//max
 
-max.greet(); // not in max , not in person , but in proto of object
+max.greet(); // not in max , not in personLiteral , but in proto of object
 max.name = "max";
 max.greet();
 

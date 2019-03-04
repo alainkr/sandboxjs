@@ -41,3 +41,15 @@ The general consensus (e.g. stackoverflow) seems to be to actually put all metho
 console.log(person instanceof Person);
 
 //next 61
+
+
+function Persone(nom, age) {
+    this.nom=nom;
+    this.age=age;
+}
+
+var el = new Persone('elvin', 55);
+console.log(el);
+
+
+// 4 ways
