@@ -25,7 +25,7 @@ console.log(array1[1]);
 console.log(array1[4]); //undefined
 
 
-var array2 = undefined;   // avoid
+var array2 = undefined;   // null
 console.log(array2);
 
 

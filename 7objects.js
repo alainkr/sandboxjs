@@ -52,5 +52,3 @@ console.log(objectWithPersonPrototype); // should print other prop /!\ works in 
 console.log(objectWithPersonPrototype.age); // actually there juste not logged just like if object with out prop is logged
 objectWithPersonPrototype.greet(); //
 
-// default prototype is Object.prototype
-console.log(objectWithPersonPrototype.prototype._)
