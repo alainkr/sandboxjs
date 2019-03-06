@@ -54,7 +54,7 @@ console.log(newArrayFromPos3toPos5);
 var start = 1;
 var end = 3;
 
-var arrayOfChar=['a', 'b', 'c', 'd', 'e'];
+var arrayOfChar=['a', 'b', 'c', 'theoBday', 'e'];
 var subArray = arrayOfChar.slice(start, end);
 console.log(arrayOfChar);
 console.log(subArray);
