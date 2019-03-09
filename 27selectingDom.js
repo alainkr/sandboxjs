@@ -12,7 +12,7 @@ console.log(document.getElementById('bb'));
 
 // css selectors
 
-console.log(document.querySelector(''));
+console.log(document.querySelector  (''));
 
 // h1 => <h1>
 // .className => div class="className"
